@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 기본 텍스트 스타일 */
+body {
+  @apply font-sans text-gray-800;
+}
+
+/* 사이드바 메뉴 */
+.sidebar-menu {
+  @apply text-sm font-medium text-gray-700 hover:text-blue-600 cursor-pointer;
+}
+.sidebar-menu-active {
+  @apply text-blue-600 font-bold;
+}
+
+/* 카드 공통 스타일 */
+.card-post {
+  @apply bg-white rounded-lg shadow-sm overflow-hidden relative transition duration-200 hover:scale-[1.015];
+}
+.card-post-title {
+  @apply font-semibold text-sm mb-2;
+}
+.card-title {
+  @apply font-semibold text-sm mb-2;
+}
+.card-desc {
+  @apply text-xs text-gray-500;
+}
+.card-meta {
+  @apply flex items-center justify-between mt-3 text-xs text-gray-400;
+}
+
+/* 태그/카테고리 뱃지 */
+.badge {
+  @apply text-xs text-blue-500 font-semibold mb-1;
+}
+
+
+
+/* 방문 통계 그래프 박스 */
+.stats-box {
+  @apply bg-white p-4 rounded-lg shadow-md;
+}
+
+/* 더보기 버튼 */
+.load-more-button {
+  @apply text-sm px-5 py-2 rounded-full border text-blue-500 hover:bg-blue-50 transition;
+}
